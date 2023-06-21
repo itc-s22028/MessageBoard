@@ -37,6 +37,7 @@ BookManager で使用したコンテナ一式は停止させてください。
    
    CREATE TABLE messages (
        id BIGSERIAL PRIMARY KEY ,
+       thread_id BIGINT NOT NULL ,
        user_id BIGINT NOT NULL ,
        message TEXT ,
        created_at TIMESTAMP NOT NULL,
