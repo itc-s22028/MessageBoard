@@ -29,6 +29,7 @@ BookManager で使用したコンテナ一式は停止させてください。
    
    CREATE TABLE threads (
        id BIGSERIAL PRIMARY KEY ,
+       user_id BIGINT NOT NULL ,
        title VARCHAR(256) NOT NULL ,
        created_at TIMESTAMP NOT NULL,
        updated_at TIMESTAMP
