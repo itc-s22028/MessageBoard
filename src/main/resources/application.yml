@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/message_board
+    username: kotlin
+    password: spring
+    driver-class-name: org.postgresql.Driver
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+  logging:
+    level:
+      root: info

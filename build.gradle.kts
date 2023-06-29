@@ -8,7 +8,7 @@ plugins {
     kotlin("plugin.spring") version "1.8.21"
 }
 
-group = "jp.ac.it_college.std.s22000"
+group = "jp.ac.it_college.std.s22028"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -32,6 +32,7 @@ dependencies {
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
+    implementation("redis.clients:jedis")
 }
 
 tasks.withType<KotlinCompile> {
